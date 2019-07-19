@@ -1,1 +1,21 @@
 // Mixins Here
+.a(){
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: @nav-font;
+    padding-right: 4rem;
+}
+
+.logo(){
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+// Parametric mixins
+.btn-sign-up(@bg-color, @color){
+    background: @bg-color;
+    color: @color;
+}
